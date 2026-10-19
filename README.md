@@ -1,198 +1,179 @@
-<<<<<<< HEAD
-# 🍱 Surplus-to-Shelter
+# 🍱 Surplus-To-Shelter
 
 > **Turning surplus food into someone's next meal.**
 
-Surplus-to-Shelter is a full-stack web platform designed to connect **food donors, shelters/NGOs, and volunteers** to make surplus food redistribution faster, easier, and more organized.
-
-The platform focuses on reducing food waste by helping donors share surplus food and enabling nearby recipient organizations to coordinate collection and delivery.
-
-
+Surplus-To-Shelter is an AI-powered food rescue platform connecting restaurants and grocery stores with nearby shelters through smart matching, AI-assisted donation parsing, and real-time routing. The platform aims to reduce food waste and deliver surplus meals to communities in need.
 
 ## ✨ Features
 
-* 🥘 **Food Donation Management** — Donors can create and manage surplus food listings.
-* 📍 **Location-Based Matching** — Helps connect available food with nearby recipients.
-* 🏠 **Shelter & NGO Management** — Recipient organizations can manage their requirements.
-* 🚗 **Pickup Coordination** — Supports coordination between donors, recipients, and volunteers.
-* ⚡ **Real-Time Updates** — Uses Socket.IO for real-time communication.
-* 🗺️ **Interactive Maps** — Location and map functionality using Leaflet.
-* 📊 **Impact Dashboard** — Visualizes food rescue and impact-related data.
-* 🔐 **Authentication** — Secure user authentication using JWT and password hashing.
-* 📧 **Email Notifications** — Supports email communication through Nodemailer.
-
----
+- 🥘 **Food Donation Management** — Create and manage surplus food listings.
+- 📍 **Location-Based Matching** — Connect available food with nearby recipients.
+- 🏠 **Shelter & NGO Management** — Help recipient organizations manage their requirements.
+- 🚗 **Pickup Coordination** — Coordinate collection and delivery between donors, recipients, and volunteers.
+- ⚡ **Real-Time Updates** — Support real-time communication using Socket.IO.
+- 🗺️ **Interactive Maps** — Location and map functionality using Leaflet.
+- 📊 **Impact Dashboard** — Visualize food rescue and impact-related data.
+- 🔐 **Authentication** — User authentication using JWT and password hashing.
+- 📧 **Email Notifications** — Email communication using Nodemailer.
+- 🤖 **AI-Assisted Donation Parsing** — Help process donation information using Gemini AI, if configured.
 
 ## 🛠️ Tech Stack
 
 ### Frontend
-
-* React
-* Vite
-* React Router
-* Tailwind CSS
-* Axios
-* Socket.IO Client
-* Leaflet & React-Leaflet
-* Recharts
+- React
+- Vite
+- React Router
+- Tailwind CSS
+- Axios
+- Socket.IO Client
+- Leaflet & React-Leaflet
+- Recharts
 
 ### Backend
-
-* Node.js
-* Express.js
-* MongoDB
-* Mongoose
-* Socket.IO
-* JWT
-* bcrypt
-* Zod
-* Nodemailer
-* node-cron
-
----
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- Socket.IO
+- JWT
+- bcrypt
+- Zod
+- Nodemailer
+- node-cron
 
 ## 🏗️ Project Structure
 
 ```text
-First_Project/
-│
-├── client/          # React frontend
-│
-├── server/          # Node.js + Express backend
-│
-├── .env.example
+Surplus-To-Shelter/
+├── client/             # React frontend
+├── server/             # Node.js + Express backend
+├── .env.example        # Example environment configuration
 ├── package.json
 ├── package-lock.json
 └── AmiHacks_Problem_Statement-1.md
 ```
 
----
+*Note: The actual files and folders may vary depending on your project.*
 
 ## 🔄 How It Works
 
 ```text
-        👨‍🍳 Food Donor
-              │
-              ▼
-       Post Surplus Food
-              │
-              ▼
-      📍 Location Matching
-              │
-              ▼
-       🏠 Recipient / NGO
-              │
-              ▼
-       🚗 Pickup Coordination
-              │
-              ▼
-        🍱 Food Delivered
-              │
-              ▼
-         📊 Impact Tracked
+       👨‍🍳 Food Donor
+             |
+             v
+      Post Surplus Food
+             |
+             v
+    📍 Location Matching
+             |
+             v
+      🏠 Recipient / NGO
+             |
+             v
+    🚗 Pickup Coordination
+             |
+             v
+       🍱 Food Delivered
+             |
+             v
+       📊 Impact Tracked
 ```
 
-The goal is to make the entire process easier to manage through a single platform.
-
----
+The platform aims to make surplus food redistribution easier to manage through a single system.
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 
-Make sure you have:
-
-* Node.js
-* npm
-* MongoDB
-* Git
+Make sure you have installed:
+- Node.js
+- npm
+- MongoDB
+- Git
 
 ### Clone the repository
 
 ```bash
-git clone https://github.com/jaindeshna699-prog/First_Project.git
-
-cd First_Project
+git clone https://github.com/mohantyamisha06-bot/Surplus-To-Shelter.git
+cd Surplus-To-Shelter
 ```
 
 ### Install dependencies
+
+Install the root dependencies:
 
 ```bash
 npm install
 ```
 
-Install client dependencies:
+Install frontend dependencies:
 
 ```bash
 cd client
 npm install
 ```
 
-Install server dependencies:
+Install backend dependencies:
 
 ```bash
 cd ../server
 npm install
 ```
 
+Return to the root directory before running root-level scripts:
+
+```bash
+cd ..
+```
+
 ### Environment Variables
 
-Create your environment files using the provided `.env.example` file and add the required configuration such as database and authentication settings.
+Configure the environment variables required by the application using the provided `.env.example` file, if available.
 
-> ⚠️ Never commit API keys, passwords, tokens, or other secrets to GitHub.
+Add the required database connection details, authentication settings, email configuration, and AI API key where applicable.
 
-### Run the project
+> ⚠️ Never commit API keys, passwords, access tokens, or other secrets to GitHub.
 
-From the root directory:
+### Run the Project
+
+Check the scripts in the root, client, and server `package.json` files to determine the correct development commands. For example, if the root package defines a `dev` script:
 
 ```bash
 npm run dev
 ```
 
----
-
 ## 🎯 Project Goals
 
-Surplus-to-Shelter aims to:
-
-* ♻️ Reduce avoidable food waste
-* 🤝 Connect food donors with NGOs and shelters
-* ⚡ Make food redistribution faster
-* 📍 Improve location-based coordination
-* 🚗 Simplify pickup and delivery
-* 📊 Track the social impact of rescued food
-
----
+- ♻️ Reduce avoidable food waste.
+- 🤝 Connect food donors with NGOs and shelters.
+- ⚡ Make food redistribution faster.
+- 📍 Improve location-based coordination.
+- 🚗 Simplify pickup and delivery.
+- 📊 Track the social impact of rescued food.
 
 ## 🔮 Future Improvements
 
-Some features that can be added in future versions:
-
-* 🤖 AI-powered donor-recipient matching
-* 🗺️ Advanced route optimization
-* 📱 Mobile application
-* 🔔 Push/SMS notifications
-* 📸 Food image recognition
-* 📈 Advanced analytics and reporting
-* 🌱 More detailed environmental impact tracking
-
----
+- 🤖 AI-powered donor-recipient matching.
+- 🗺️ Advanced route optimization.
+- 📱 A dedicated mobile application.
+- 🔔 Push and SMS notifications.
+- 📸 Food image recognition.
+- 📈 Advanced analytics and reporting.
+- 🌱 Detailed environmental impact tracking.
 
 ## 🏆 Hackathon
 
 This project was developed around the **AmiHacks – Surplus-to-Shelter: Real-Time Food Rescue Routing** problem statement.
 
-The project focuses on using technology to address food waste, redistribution, and real-time coordination challenges.
-
----
+It explores how technology can help address food waste, food redistribution, and real-time coordination challenges.
 
 ## 👩‍💻 Author
 
-### Deshna Jain
+### Amisha Mohanty
 
 Computer Science Engineering Student
 
-🔗 GitHub: [@jaindeshna699-prog](https://github.com/jaindeshna699-prog)
+🔗 GitHub: [@mohantyamisha06-bot](https://github.com/mohantyamisha06-bot)
 
 ---
 
@@ -200,12 +181,6 @@ Computer Science Engineering Student
 
 If you find this project interesting, consider giving it a ⭐ on GitHub!
 
----
-
 <p align="center">
   🍱 <b>Save Food • Connect Communities • Create Impact</b> 🌱
 </p>
-=======
-# Surplus-To-Shelter
-Surplus-to-Shelter is an AI-powered food rescue platform connecting restaurants and grocery stores with nearby shelters through smart matching, Gemini AI donation parsing, and real-time routing to reduce food waste and deliver surplus meals to communities in need.
->>>>>>> 83db90e13f1fc3fe11d281dc3b1a8dfa048ab4f0
