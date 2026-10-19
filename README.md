@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🍱 Surplus-to-Shelter
 
 > **Turning surplus food into someone's next meal.**
@@ -204,3 +205,7 @@ If you find this project interesting, consider giving it a ⭐ on GitHub!
 <p align="center">
   🍱 <b>Save Food • Connect Communities • Create Impact</b> 🌱
 </p>
+=======
+# Surplus-To-Shelter
+Surplus-to-Shelter is an AI-powered food rescue platform connecting restaurants and grocery stores with nearby shelters through smart matching, Gemini AI donation parsing, and real-time routing to reduce food waste and deliver surplus meals to communities in need.
+>>>>>>> 83db90e13f1fc3fe11d281dc3b1a8dfa048ab4f0
